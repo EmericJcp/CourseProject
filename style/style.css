@@ -1,0 +1,272 @@
+.flexCenter, body, html, .container .form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+header {
+  width: 100%;
+  height: 66.66%;
+  background-color: #151532;
+  position: absolute;
+  top: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .logo {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+header .logo h1 {
+  color: white;
+  margin-left: 60px;
+}
+
+header img {
+  width: 50%;
+  height: auto;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.container {
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 60px;
+  position: absolute;
+  top: 40%;
+}
+
+.container .form-container {
+  width: 348px;
+  height: 415px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 4px 50px rgba(21, 21, 50, 0.1);
+          box-shadow: 0px 4px 50px rgba(21, 21, 50, 0.1);
+  background: #FFFFFF;
+}
+
+.container .form-container form {
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .form-container form h2 {
+  margin-bottom: 30px;
+  color: #151532;
+}
+
+.container .form-container form input {
+  width: 257px;
+  height: 42px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #19191f;
+  background: #E5E5F4;
+}
+
+.container .form-container form input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #a5a5ca;
+}
+
+.container .form-container form input:-ms-input-placeholder {
+  font-weight: bold;
+  color: #a5a5ca;
+}
+
+.container .form-container form input::-ms-input-placeholder {
+  font-weight: bold;
+  color: #a5a5ca;
+}
+
+.container .form-container form input::placeholder {
+  font-weight: bold;
+  color: #a5a5ca;
+}
+
+.container .form-container form button {
+  width: 200px;
+  height: 42px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  background: #E5E5F4;
+  margin-top: 20px;
+  cursor: pointer;
+  background: #151532;
+}
+
+.container .form-container form .error {
+  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  background: red;
+}
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+            transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+            transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+}
+
+.container #card-container {
+  width: 70%;
+  height: 415px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: auto;
+}
+
+.container #card-container .card {
+  width: 266px;
+  height: 324px;
+  background: white;
+  margin-left: 30px;
+  -webkit-box-shadow: 0px 4px 50px rgba(21, 21, 50, 0.1);
+          box-shadow: 0px 4px 50px rgba(21, 21, 50, 0.1);
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container #card-container .card .card-img {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.container #card-container .card .card-img .image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container #card-container .card .card-texts {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container #card-container .card .card-texts .spacing {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container #card-container .card .card-texts .spacing:not(:first-child) {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=style.css.map */
